@@ -1,0 +1,148 @@
+/* Reset básico */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo geral */
+body {
+    font-family:'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* Cabeçalho */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #0366d6;
+    color: white;
+    padding: 10px 20px;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+    text-align: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    color: #ffcc00;
+}
+
+/* Compensa o cabeçalho fixo ao rolar para seções */
+section {
+    scroll-margin-top: 100px;
+}
+
+/* Conteúdo principal */
+main {
+    margin-top: 150px;
+    text-indent: initial; /* Ajuste para compensar o cabeçalho fixo */
+    
+}
+
+h2 {
+    color: #0366d6;
+}
+
+.video {
+    display: flex;
+    justify-content: center; 
+    align-items: center;    
+    margin: 20px auto;      
+    max-width: 800px;       
+    padding: 0 20px; 
+}
+
+/* Centralizando o texto com margem */
+section {
+    margin: 50px auto; /* Adicionando margem nas laterais para afastar o texto */
+    max-width: 800px; /* Limita a largura do conteúdo */
+    padding: 0 20px; /* Adiciona um pequeno padding para o conteúdo não ficar grudado nas bordas */
+}
+
+h2 {
+    text-align: center; /* Garante que os subtítulos fiquem centralizados */
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    background-color: #f1f1f1;
+    padding: 10px;
+    font-size: 0.9em;
+}
+
+/* Estilo das imagens */
+img {
+    max-width: 100%;
+    border-radius: 10px;
+    transition: opacity 0.3s;
+}
+
+.centralizado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilo dos personagens */
+.personagem {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.personagem-item {
+    text-align: center;
+}
+
+.personagem-item img {
+    max-width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.personagem-item .hover {
+    display: none;
+}
+
+.personagem-item:hover .principal {
+    display: none;
+}
+
+.personagem-item:hover .hover {
+    display: block;
+}
+
+/* Adicionando rolagem suave */
+html {
+    scroll-behavior: smooth;
+}
+
